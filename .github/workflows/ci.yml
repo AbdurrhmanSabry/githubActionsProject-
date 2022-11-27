@@ -64,12 +64,12 @@ jobs:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-    - name: Build and push
-      uses: docker/build-push-action@v3
-      with:
-        push: true
-        tags: abdurrhmansm/java-app:latest
-        file: Dockerfile
+    # - name: Build and push
+    #   uses: docker/build-push-action@v3
+    #   with:
+    #     push: true
+    #     tags: abdurrhmansm/java-app:latest
+    #     file: Dockerfile
 
   # Another action
     - uses: mr-smithers-excellent/docker-build-push@v4
