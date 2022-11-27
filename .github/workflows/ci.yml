@@ -50,7 +50,7 @@ jobs:
       with:
         arguments: build
     - name: ls
-      run: ls ./build
+      run: ls -R ./build
 
     - name: Set up QEMU
       uses: docker/setup-qemu-action@v2
