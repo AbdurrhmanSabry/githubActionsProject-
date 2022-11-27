@@ -1,8 +1,7 @@
 FROM openjdk:8-jre-alpine
 
 EXPOSE 8080
-RUN ls ./build/lib/
-RUN ls ./build/docker/
+RUN ls -R ./
 COPY ./build/docker/*.jar /usr/app/
 WORKDIR /usr/app
 
