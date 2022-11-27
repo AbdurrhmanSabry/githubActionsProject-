@@ -49,6 +49,9 @@ jobs:
       uses: gradle/gradle-build-action@v2
       with:
         arguments: build
+    - name: ls
+      run: ls ./build
+
     - name: Set up QEMU
       uses: docker/setup-qemu-action@v2
   
